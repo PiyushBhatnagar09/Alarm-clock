@@ -1,0 +1,119 @@
+/* Classes which can be used at multiple places :- */
+.white-text {
+    color: rgba(255, 255, 255, 0.915);
+}
+
+.set-underline {
+    text-decoration: underline;
+}
+
+.set-background-blue {
+    background-color: rgba(6, 114, 136, 0.658);
+}
+
+.set-text-size-17 {
+    font-size: 17px;
+}
+
+.set-background-blur {
+    background-color: rgba(223, 223, 217, 0.555);
+}
+
+/* Styling other elements of the page */
+body {
+    background-image: url('images/background.jpg');
+    background-size:cover;
+    min-width: 540px;
+}
+
+.heading {
+    text-align: center;
+    background-color: rgba(6, 114, 136, 0.658);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 60px;
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+}
+
+#outer-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#alarm-logo {
+    position: relative;
+    height: 60px;
+    margin-bottom: 2.4%;
+    margin-left: 15px;
+}
+
+.date-time {
+    color: white;
+}
+
+#inner-div1 {
+    display: inline-block;
+    height: 100%;
+    width: 70%;
+    padding: 0px;
+}
+
+#inner-div2 {
+    display: inline-block;
+    height: 100vh;
+    width: 30%;
+    text-align: center;
+    border-left: 2px solid white;
+}
+
+#today-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.today-val {
+    color: white;
+}
+
+input {
+    width: 70px;
+    height: 50px;
+}
+
+#set-alarm-button {
+    padding: 5px;
+    font-size: large;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.delete {
+    height: 50px;
+    padding: 5px 0px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+.delete:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+}

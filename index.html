@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALARM CLOCK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f47311485a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="outer-container">
+
+        <!-- This is the div inside which we see current time, date, etc and can set new alarms -->
+        <div id="inner-div1">
+            <div class="heading" class="container">
+                <span class="white-text">ALARM CLOCK</span>
+                <img id="alarm-logo" src="images/alarm.png"></img>
+            </div>
+            
+            <!-- This shows current time, date and day to the user -->
+            <div id="today-container">
+                <div id="today-time"><span class="white-text set-text-size-17">CURRENT TIME: </span></div>
+                <div id="today-date"><span class="white-text set-text-size-17">CURRENT DATE: </span></div>
+                <div id="today-day"><span class="white-text set-text-size-17">CURRENT DAY: </span></div>
+            </div>
+
+            <!-- User fills time and date to set alarm in this form-->
+            <form action="" id="myForm">
+                <div id="set-alarm">
+                    <h2 class="white-text set-underline set-background-blue">&nbsp;SET NEW ALARM :</h2>
+
+                    <div class="white-text">
+                        <br>
+                        <span class="set-text-size-17">&emsp;SET TIME :</span>
+                        <input type="number" class="set-text-size-17" name="alarm-hour" id="alarm-hour" value="" min="0" max="23" required> :
+                        <input type="number" class="set-text-size-17" name="alarm-min" id="alarm-min" value="" min="0" max="59" required> :
+                        <input type="number" class="set-text-size-17" name="alarm-sec" id="alarm-sec" value="" min="0" max="59" required>
+                        <br>
+                        <hr>
+                        <br>
+                        <span class="set-text-size-17">&emsp;SET DATE :</span>
+                        <input type="number" class="set-text-size-17" name="alarm-date-date" id="alarm-date-date" value="" min="1" max="30" required> :
+                        <input type="number" class="set-text-size-17" name="alarm-date-month" id="alarm-date-month" value="" min="1" max="12" required> :
+                        <input type="number" class="set-text-size-17" name="alarm-date-year" id="alarm-date-year" value="" min="2023" max="2050" required>
+                    </div>
+                </div>
+                <br>
+                <hr style="color: white">
+                <button type="submit" id="set-alarm-button">SET ALARM</button>
+            </form>
+
+            <br>
+            <br>
+        </div>
+
+        <!-- This is side block where all the upcoming alarms will be displayed -->
+        <div id="inner-div2">
+            <p class="white-text set-background-blue heading">YOUR ALARMS</p>
+            <ul id="alarm-list"></ul>
+        </div>
+
+    </div>
+
+    <!-- Linking the necessary bootstrap file and script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
